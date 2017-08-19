@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost/hostel/index.php# -->
+<html lang="en" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#3e454c">
+	<title>Student Hostel Registration</title>
+	<link rel="stylesheet" href="./Student Hostel Registration_files/font-awesome.min.css">
+	<link rel="stylesheet" href="./Student Hostel Registration_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./Student Hostel Registration_files/dataTables.bootstrap.min.css"></head><body>&gt;
+	<link rel="stylesheet" href="./Student Hostel Registration_files/bootstrap-social.css">
+	<link rel="stylesheet" href="./Student Hostel Registration_files/bootstrap-select.css">
+	<link rel="stylesheet" href="./Student Hostel Registration_files/fileinput.min.css">
+	<link rel="stylesheet" href="./Student Hostel Registration_files/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="./Student Hostel Registration_files/style.css">
+<script type="text/javascript" src="./Student Hostel Registration_files/jquery-1.11.3-jquery.min.js.download"></script>
+<script type="text/javascript" src="./Student Hostel Registration_files/validation.min.js.download"></script>
+<script type="text/javascript" src="./Student Hostel Registration_files/jquery.min.js.download"></script>
+<script type="text/javascript">
+function valid()
+{
+if(document.registration.password.value!= document.registration.cpassword.value)
+{
+alert("Password and Re-Type Password Field do not match  !!");
+document.registration.cpassword.focus();
+return false;
+}
+return true;
+}
+</script>
+
+
+	
+<br>
+<b>Notice</b>:  Undefined index: id in <b>C:\xampp\htdocs\hostel\includes\header.php</b> on line <b>2</b><br>
+<div class="brand clearfix">
+		<a href="http://localhost/hostel/index.php#" class="logo" style="font-size:16px;">OP JINDAL UNIVERSITY</a>
+		<span class="menu-btn"><i class="fa fa-bars"></i></span>
+		
+	</div>
+		<div class="ts-main-content">
+		<nav class="ts-sidebar">
+			<ul class="ts-sidebar-menu">
+			
+				<li class="ts-label">Main</li>
+								
+				<li><a href="http://localhost/hostel/registration.php"><i class="fa fa-files-o"></i> User Registration</a></li>
+				<li><a href="http://localhost/hostel/index.php"><i class="fa fa-users"></i> User Login</a></li>
+				<li><a href="http://localhost/hostel/admin"><i class="fa fa-user"></i> Admin Login</a></li>
+				
+			</ul>
+		</nav>		<div class="content-wrapper">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-12">
+					
+						<h2 class="page-title">User Login </h2>
+
+						<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="well row pt-2x pb-3x bk-light">
+							<div class="col-md-8 col-md-offset-2">
+							
+								<form action="http://localhost/hostel/index.php" class="mt" method="post" pb-autologin="true" autocomplete="off">
+									<label for="" class="text-uppercase text-sm">Email</label>
+									<input type="text" placeholder="Email" name="email" class="form-control mb" pb-role="username">
+									<label for="" class="text-uppercase text-sm">Password</label>
+									<input type="password" placeholder="Password" name="password" class="form-control mb" pb-role="password">
+									
+
+									<input type="submit" name="login" class="btn btn-primary btn-block" value="login" pb-role="submit">
+								<passwordboxicon pb-icon="username" icon-type="main" style="display: none; position: absolute; background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzU4NUJBRkU1QkVFMTFFNDkyRkVDMDk0Nzk5RDFBMDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzU4NUJBRkQ1QkVFMTFFNDkyRkVDMDk0Nzk5RDFBMDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA5M0ZFMjdERDI5NDExRTE5Njc0OTU4Rjk3NzgwODJEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA5M0ZFMjdFRDI5NDExRTE5Njc0OTU4Rjk3NzgwODJEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MHuEgAAAAWtJREFUeNq8VCFMxEAQ3DZ1RRdfSUBTcg6JwdfjeQsaJCXYDxZ03/+7BtD/BsMLDAFdXebu9r7bpnxLSZhkvr9719vu7uxRVVXUiUlxDUbCjo2vA/qMPvr0M17AI2En7BsFX3xxBIZi7Qk8FvYh+9z+sJHx4EBEMXiHlw+MlalP/M7E+ox9xHvu+Z1B8HT9PM+r+0B0CU5x6DP7FAcu2NYlPAOv4HtzPfpdIFcSIs2Sgy7Bd/DEHO7WMlVKMfRii+rOwVTYqfGNVF2wkbJUW6ZyPCNTwho5Z6j3n7I4HC76Egq4/l0bS5b0XMi75P05B7a46S9dsGXt0WQwKXbwfAVT7tEotFWnG637sDJfbUv0Be6Ba/jm7NsHb50ghojBb1wxdjZWXBo3pB/ggkvnyrbmmYvHDGxomuqC2Ox2zazYeYk3N0emHoTUB6HuUaaWrbWkceXY/7U4eFjHZEQdgRatSzb5kxj+A98CDADG3MBsPyzvawAAAABJRU5ErkJggg==&quot;) right center no-repeat; width: 30px; height: 46px; z-index: auto; visibility: hidden; top: 24px; left: 852px;"></passwordboxicon><passwordboxicon pb-icon="password" icon-type="main" style="display: none; position: absolute; background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzU4NUJBRkU1QkVFMTFFNDkyRkVDMDk0Nzk5RDFBMDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzU4NUJBRkQ1QkVFMTFFNDkyRkVDMDk0Nzk5RDFBMDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA5M0ZFMjdERDI5NDExRTE5Njc0OTU4Rjk3NzgwODJEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA5M0ZFMjdFRDI5NDExRTE5Njc0OTU4Rjk3NzgwODJEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MHuEgAAAAWtJREFUeNq8VCFMxEAQ3DZ1RRdfSUBTcg6JwdfjeQsaJCXYDxZ03/+7BtD/BsMLDAFdXebu9r7bpnxLSZhkvr9719vu7uxRVVXUiUlxDUbCjo2vA/qMPvr0M17AI2En7BsFX3xxBIZi7Qk8FvYh+9z+sJHx4EBEMXiHlw+MlalP/M7E+ox9xHvu+Z1B8HT9PM+r+0B0CU5x6DP7FAcu2NYlPAOv4HtzPfpdIFcSIs2Sgy7Bd/DEHO7WMlVKMfRii+rOwVTYqfGNVF2wkbJUW6ZyPCNTwho5Z6j3n7I4HC76Egq4/l0bS5b0XMi75P05B7a46S9dsGXt0WQwKXbwfAVT7tEotFWnG637sDJfbUv0Be6Ba/jm7NsHb50ghojBb1wxdjZWXBo3pB/ggkvnyrbmmYvHDGxomuqC2Ox2zazYeYk3N0emHoTUB6HuUaaWrbWkceXY/7U4eFjHZEQdgRatSzb5kxj+A98CDADG3MBsPyzvawAAAABJRU5ErkJggg==&quot;) right center no-repeat; width: 30px; height: 46px; z-index: auto; visibility: hidden; top: 112px; left: 852px;"></passwordboxicon></form>
+							</div>
+						</div>
+						<div class="text-center text-light" style="color:black;">
+							<a href="http://localhost/hostel/forgot-password.php" style="color:black;">Forgot password?</a>
+						</div>
+					</div>
+				</div>
+						</div>
+							</div>
+						</div>
+					</div>
+				</div> 	
+			
+		
+	
+	<script src="./Student Hostel Registration_files/jquery.min.js(1).download"></script>
+	<script src="./Student Hostel Registration_files/bootstrap-select.min.js.download"></script>
+	<script src="./Student Hostel Registration_files/bootstrap.min.js.download"></script>
+	<script src="./Student Hostel Registration_files/jquery.dataTables.min.js.download"></script>
+	<script src="./Student Hostel Registration_files/dataTables.bootstrap.min.js.download"></script>
+	<script src="./Student Hostel Registration_files/Chart.min.js.download"></script>
+	<script src="./Student Hostel Registration_files/fileinput.js.download"></script>
+	<script src="./Student Hostel Registration_files/chartData.js.download"></script>
+	<script src="./Student Hostel Registration_files/main.js.download"></script>
+
+
+</body></html>
